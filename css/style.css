@@ -167,3 +167,54 @@ footer p{
 footer li img {
     width: 16px;
 }
+
+@media only screen and (max-width: 768px) {
+    .home {
+        display: block;
+    }
+    
+    header img {
+        max-width: 26px;
+    }
+
+    header p {
+        display: none;
+    }
+
+    header{
+        padding: 5px;
+    }
+
+    .preview{
+        display: none;
+    }
+
+    .home h1{
+        font-size: 1rem;
+        padding: 0;
+    }
+
+    .left-panel {
+        align-items: flex-start;
+        justify-content: flex-start;
+        display: flex;
+        padding-top: 50px;
+        padding-left: 10px;
+    }
+
+    .home p{
+        padding: 0;
+    }
+
+    .goods{
+        display: none;
+    }
+
+    .center-panel{
+        display: none;
+    }
+
+    .right-panel{
+        display: none;
+    }
+}
