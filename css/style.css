@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+li, ul{
+    list-style: none;
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    padding: 20px;
+}
+
+header img{
+    max-width: 40px;
+    float: left;
+    border-radius: 50%;
+}
+
+header p{
+    position: relative;
+    top: -25px;
+    font-size: 26px;
+    padding-left: 46px;
+}
+
+.home {
+    display: flex;
+}
+
+.home > div{
+    flex: 1;
+}
+
+.home h1{
+    font-size: 3rem;
+    margin: 0;
+    padding: 0px 40px;
+}
+
+.home p{
+    margin: 10px 0px;
+    padding: 0px 40px;
+}
+
+.left-panel{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.center-panel{
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    display: flex;
+}
+
+.preview{
+    position: absolute;
+}
+
+.preview img{
+    border-radius: 50%;
+    width: 469px;
+    margin: 0 auto;
+    display: block;
+    
+}
+
+.goods li{
+    float: left;
+    padding-right: 10px;
+}
+
+.goods a{
+    display: inline-block;
+    cursor: pointer;    
+    /*border: 3px solid #f3f3f3;
+    border-radius: 10px;*/
+}
+
+.goods a img{
+    border: 2px solid #f3f3f3;
+    border-radius: 50%;
+}
+
+.goods a.active img{
+    animation: color-change 5s linear infinite;
+}
+
+@keyframes color-change {
+    0%,100%{
+      border-color:#391492;
+    }
+  
+    25%{
+      border-color:#B32BB4;
+    }
+    
+    50%{
+      border-color:#DD5B5D;
+    }
+    
+    75%{
+      border-color:#0091EA;
+    }
+  }
+
+.goods img {
+    max-width: 90px;
+}
+
+.shop{
+    position: relative;
+    max-height: 95vh;
+    overflow-y: scroll;
+}
+
+.shop li {
+    float: left;
+    margin: 10px;
+}
+
+.shop li a {
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.shop li a span {
+    position: absolute;
+    transform: rotate(-90deg);
+    left: -80px;
+    font-size: 12px;
+    color: black;
+    width: 100%;
+    top: 0;
+}
+
+.shop li img {
+    max-width: 180px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+}
+
+footer li{
+    float: left;
+    padding-right: 10px;
+}
+
+footer p{
+    clear: both;
+    font-size: 12px;
+    padding-left: 40px;
+}
+
+footer li img {
+    width: 16px;
+}
